@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=""styles.css/>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+    
+    <title>Contact</title>
 </head>
 <body>
+    
+        <header>
+            <nav class="main-nav">
+              <input type="checkbox" id="check" />
+              <label for="check" class="menu-btn">
+                <i class="fas fa-bars"></i>
+              </label>
+              <a href="index.html" class="logo"></a>
+              <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Inscription</a></li>
+                <li><a href="#">Connexion</a></li>
+              </ul>
+            </nav>
+        </header>
+ <div id="block"> 
+           
+        <picture id="where">
+            <source media="(min-width:650px)" srcset="images/map.png">
+            <source media="(max-width:650px)" srcset="images/map-390.png">
+            <img class="google" src="images/map.png" alt="map" style="width:auto">
+        </picture> 
+    <div id="middle">
+      <form id="form" method="post" action="*">
+   
+      <p class="info"><span> Besoin d'informations ?</span></p>
+        <fieldset id="who">
+            <label for="nom"><input id="name"  name="nom" type="text" placeholder="Nom" required /></label> 
+            <label for="email"><input id="email"  name="email" type="email" placeholder="Mail" required/></label>
+        </fieldset>
+        <fieldset id="comment">
+          <textarea name="ideas" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Envoyer" name="submit"/>
+    </form>
+    </div>
+        <div id="social">
+          
+                <a  href="https://fr-fr.facebook.com/" class="fa fa-facebook fa-3x icon reso"></a>
+                <a  href="https://twitter.com/" class="fa fa-twitter fa-3x icon reso"></a>
+                <a  href="https://github.com/" class="fa fa-github fa-3x icon reso"></a>
+                <a  href="https://www.whatsapp.com/" class="fa fa-whatsapp fa-3x icon reso"></a>
+        </div>
+    </div>
+        <footer>
+          <div id="mention">
+            <p class="copyright">
+              Copyright S.C.A 2023
+            </p>
+            <img id="pied" src="images/Vector.png" alt="green">
+                    
+          </div>
+        </footer>
+        
     
 </body>
 </html>
