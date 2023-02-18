@@ -107,7 +107,7 @@ body{
  
   #form {
       font-family: Abril Fatface, sans-serif;
-      width: 95vw;
+      width: 370px;
       height: 390px;
       margin: 0 auto;
       background-image: url(images/forest-s.jpg);
@@ -130,7 +130,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:84vw;
+    width:327px;
     height: 4vh;
     text-align: center;
     border-radius: 5px;
@@ -157,7 +157,7 @@ body{
   input{
     font-family: abril fatface, sans-serif;
     background-color: rgb(252, 252, 252);
-    width:84vw;
+    width:327px;
     height: 4vh;
     box-shadow: 0 4px 10px rgb(0, 0, 0);
     border-radius: 5px;
@@ -176,7 +176,7 @@ body{
  
 textarea{
       background-color: white;
-      width:84vw;
+      width:327px;
       height: 17vh;
       box-sizing: border-box;
       border-radius: 5px;
@@ -197,13 +197,13 @@ textarea{
       text-align: center;
       box-sizing: border-box;
       margin-top: 2vh;
-
+      
     }
     
       div #social {
         
         width:25%;
-         margin: auto;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -225,23 +225,36 @@ textarea{
     }
    div #mention{
     display:flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     float: bottom;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    vertical-align: top;
      }  
      footer{
       width: 100%;
-     }
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+    
      img#pied{
-      margin-bottom: 0;
-      width: 100%;
+     bottom: 0;
+     width: 100%;
+     height: 12vh;
      }
       
     
     .copyright{
-    position:absolute;
-    bottom: 125vh;
+      position: absolute;
+      margin-top: 8vh;
+     
+    
+        
     
    
 }
@@ -253,8 +266,7 @@ textarea{
   
 
 /* RESPONSIVE---------------------------------------------------------------------------------*/
-@media (max-width:800px){
-  
+@media (max-width: 800px){
     .main-nav {
       height:6vh;
     }
@@ -287,111 +299,88 @@ textarea{
     #check:checked ~ .navlinks {
       right: 0;
     }
+  }
 
    
 
 
   
-  @media (min-width: 800px) {
-  body{
-   
-   
-    background: linear-gradient(90deg, #56AB2F 0%, #A8E063 100%); 
- }
- header {
-    background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+@media (min-width: 800px) {
+  
+  
+      .main-nav {
+        height: 48px;
+      }
+      
+      .logo {
+        color: white;
+        
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+         font-family: abril fatface, sans-serif;
+      }
+      
+      .navlinks {
+        list-style: none;
+       
+        line-height: 50px;
+        font-family: abril fatface, sans-serif;
+        margin: 0;
+        padding: 0;
+        z-index:1;
+      }
+      
+      .navlinks li {
+        display: inline-block;
+        margin: 0px 30px;
+      }
+      
+      .navlinks li a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.3s linear 0s;
+     
+      }
+      
+      .navlinks li a:hover {
+        color: #7ebcb9;
+        padding-bottom: 7px;
+        border-bottom: 2px solid #7ebcb9;
+      }
+      
+      li a.contact {
+        background-color: #00adb5;
+        padding: 9px 20px;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+        border-bottom: none;
+      }
+      
+      li a.contact:hover {
+        background-color: #047e85;
+        color: white;
+        border-bottom: none;
+      }
+      
+      #check {
+        display: none;
+      }
+      
+      .menu-btn {
+        font-size: 25px;
+        color: black;
+        float: left;
+        position: absolute;
+        left: 5.64%;
+        right: 89.74%;
+        display: none;
+        cursor: pointer;
+      }
+      
+      
     
-  }
+     
+    }
   
-  .main-nav {
-    height: 48px;
-  }
-  
-  .logo {
-    color: white;
-    line-height: 90px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    
-    font-family: abril fatface, sans-serif;
-  }
-  
-  .navlinks {
-    list-style: none;
-    float: right;
-    line-height: 50px;
-    font-family: abril fatface, sans-serif;
-    margin: 0;
-    padding: 0;
-    z-index:1;
-  }
-  
-  .navlinks li {
-    display: inline-block;
-    margin: 0px 30px;
-  }
-  
-  .navlinks li a {
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s linear 0s;
-    text-transform: uppercase;
-  }
-  
-  .navlinks li a:hover {
-    color: #7ebcb9;
-    padding-bottom: 7px;
-    border-bottom: 2px solid #7ebcb9;
-  }
-  
-  li a.contact {
-    background-color: #00adb5;
-    padding: 9px 20px;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
-    border-bottom: none;
-  }
-  
-  li a.contact:hover {
-    background-color: #047e85;
-    color: white;
-    border-bottom: none;
-  }
-  
-  #check {
-    display: none;
-  }
-  
-  .menu-btn {
-    font-size: 25px;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 5.64%;
-    right: 89.74%;
-    display: none;
-    cursor: pointer;
-  }
-  
-  
-
- 
-}
-@media (max-width: 360px) {
-  .logo {
-    margin-left: 10px;
-    font-size: 25px;
-  }
-
-  .menu-btn {
-    margin-right: 10px;
-    font-size: 25px;
-  }
-
-  .menu-btn:focus {
-    color: blue;
-  }
-}
