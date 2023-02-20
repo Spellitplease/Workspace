@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+  
 }
  
 body{
@@ -30,40 +31,48 @@ body{
   }
   
   .navlinks {
+    font-size: 1.5em;
     list-style: none;
-    float: right;
+    float: left;
     line-height: 90px;
-    
     margin: 0;
     padding: 0;
     z-index:1;
   }
   
-  .navlinks li {
+  .navlinks li :not(.gauche){
     display: inline-block;
     margin: 0px 20px;
   }
-  
+  .gauche{
+    display: inline-block;
+    margin-left:1200px;
+
+  }
+  .push-right {
+    display: inline-block;
+    margin-left: 1000px;
+  }
   .navlinks li a {
     color: #000;
     text-decoration: none;
-    font-size: 18px;
     transition: all 0.3s linear 0s;
-    text-transform: uppercase;
+    
   }
   
   .navlinks li a:hover {
-    color: #7ebcb9;
+    color:#185467;
     padding-bottom: 7px;
     border-bottom: 2px solid #7ebcb9;
   }
   
   li a.contact {
     background-color: #00adb5;
-    padding: 9px 20px;
+    padding: 9px ;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
     border-bottom: none;
+    
   }
   
   li a.contact:hover {
@@ -93,7 +102,7 @@ body{
   display: flex;
   justify-content: center;
   margin-top: 1vh;
-  border-radius: 15px;
+  
 
  }
 .google{
@@ -108,7 +117,7 @@ body{
   #form {
       font-family: Abril Fatface, sans-serif;
       width: 370px;
-      height: 390px;
+      height: 45vh;
       margin: 0 auto;
       background-image: url(images/forest-s.jpg);
       opacity: 85%;
@@ -200,63 +209,59 @@ textarea{
       
     }
     
-      div #social {
-        
-        width:25%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
+    #social{
+      width: 75%;
+      margin-top: 5vh;
+      margin: 0 auto;
+      
     }
-
+    #lien{
+    
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    vertical-align: auto;
+    
+    }
+      
     .reso{
-      background: #185467;
-      text-decoration: none;
-      width: 60%;
-      height: 60%;
-    }
-    footer{
-      font-family: abril fatface, sans-serif;
-      color:white;
-      display: flex;
-      justify-content: center;
-      
-    }
-   div #mention{
-    display:flex;
-    width: 100%;
-    float: bottom;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    display: inline-block;
-    vertical-align: top;
-     }  
-     footer{
-      width: 100%;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      display: inline-block;
-      vertical-align: top;
+      color: #185467;
+       font-size: 3em; 
     }
     
-     img#pied{
-     bottom: 0;
-     width: 100%;
-     height: 12vh;
-     }
       
     
-    .copyright{
-      position: absolute;
-      margin-top: 8vh;
-     
-    
-        
     
    
+    
+     
+     footer{
+      position: absolute;
+      display:flex;
+      justify-content: center;
+      width:100%;
+      bottom: 0;
+          
+      
+    }
+    
+     
+    
+    
+     
+    
+    .copyright{
+      font-family: 'Abril Fatface';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1em;
+      color: #FFFFFF;
+      position: absolute;
+      margin-top: 7vh;
+      
+             
+      
 }
 
 
@@ -266,7 +271,7 @@ textarea{
   
 
 /* RESPONSIVE---------------------------------------------------------------------------------*/
-@media (max-width: 800px){
+@media (max-width:800px){
     .main-nav {
       height:6vh;
     }
@@ -277,7 +282,9 @@ textarea{
       transition: all 0.5s;
       right: 100%;
       background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+    top: 6vh;
     }
+
   
     .navlinks li {
       display: block;
@@ -305,27 +312,24 @@ textarea{
 
 
   
-@media (min-width: 800px) {
+@media (min-width: 1440px) {
   
   
       .main-nav {
-        height: 48px;
+        height: 64px;
       }
       
       .logo {
         color: white;
-        
-        font-size: 30px;
         font-weight: bold;
         text-decoration: none;
          font-family: abril fatface, sans-serif;
       }
       
       .navlinks {
+        
         list-style: none;
-       
         line-height: 50px;
-        font-family: abril fatface, sans-serif;
         margin: 0;
         padding: 0;
         z-index:1;
@@ -339,15 +343,14 @@ textarea{
       .navlinks li a {
         color: #000;
         text-decoration: none;
-        font-size: 18px;
         transition: all 0.3s linear 0s;
      
       }
       
       .navlinks li a:hover {
-        color: #7ebcb9;
+          color:#185467;
         padding-bottom: 7px;
-        border-bottom: 2px solid #7ebcb9;
+        border-bottom: 2px solid  #185467;
       }
       
       li a.contact {
@@ -369,9 +372,8 @@ textarea{
       }
       
       .menu-btn {
-        font-size: 25px;
+        
         color: black;
-        float: left;
         position: absolute;
         left: 5.64%;
         right: 89.74%;
@@ -379,8 +381,144 @@ textarea{
         cursor: pointer;
       }
       
+      #where{
+        width: 847px;
+        height: 467px;
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+      }
+        
       
-    
+      #map{
+        position: absolute;
+        margin-left: 87px;
+        margin-top: 152px;
      
     }
+   
+
+    p.info{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:565px;
+      height: 55px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 4px 10px rgb(56, 56, 56);
+      margin-top: 2vh;
+    }
+    span{
+      font-family: Abril Fatface, sans-serif;
+      font-size:2em;
+      color: #185467;
+    }
+    #form{
+      width: 620px;
+      height:777px;
+      margin-right: 173px;
+      margin-top: 60px;
+      
+     } 
+     
+    
+  
+    label {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        
+        
+    }
+    input{
+      font-family: abril fatface, sans-serif;
+      background-color: rgb(252, 252, 252);
+      width:565px;
+      height: 55px;
+      font-size: 1.3em;
+      box-shadow: 0 4px 10px rgb(0, 0, 0);
+      border-radius: 5px;
+      border: none;
+      padding-left: 5px;
+      box-sizing:border-box;
+      margin-top: 50px;
+    
+      
+    }
+    
+    fieldset{
+      
+      border:none;
+      box-sizing: border-box;
+      
+    }
+   
+  textarea{
+    font-family: abril fatface, sans-serif;
+        background-color: white;
+        width:565px;
+        height: 265px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        resize: none;
+        margin-top: 50px;
+        box-shadow: 0 4px 10px rgb(56, 56, 56);
+            
+   }
+   #submit{
+      
+    font-family: abril fatface, sans-serif;
+    color:#185467;
+    font-size: 1.9em;
+    width: 241px;
+    height: 87px;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    
+    
+  }
+  #lien{
+    position: absolute;
+    width: 600px;
+    font-size: 1.5em;
+    margin-top:200px;
+    margin-left: -40px;
+    
+    
+    
+  }
+  footer{
+    position: absolute;
+    display:flex;
+    
+    width:100%;
+    bottom: 0;
+        
+    
+  }
+  
+        
+  .copyright{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    color: #FFFFFF;
+    position: absolute;
+  margin-top: 10vh;
+    
+           
+    
+}
+#pied{
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+}
+  }
+  
   
