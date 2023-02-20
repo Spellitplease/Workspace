@@ -185,6 +185,7 @@ body{
  
 textarea{
       background-color: white;
+      font-family: abril fatface, sans-serif;
       width:327px;
       height: 17vh;
       box-sizing: border-box;
