@@ -40,19 +40,9 @@ body{
     z-index:1;
   }
   
-  .navlinks li :not(.gauche){
-    display: inline-block;
-    margin: 0px 20px;
-  }
-  .gauche{
-    display: inline-block;
-    margin-left:1200px;
-
-  }
-  .push-right {
-    display: inline-block;
-    margin-left: 1000px;
-  }
+  
+  
+  
   .navlinks li a {
     color: #000;
     text-decoration: none;
@@ -290,6 +280,7 @@ textarea{
     .navlinks li {
       display: block;
     }
+    
   
     .navlinks li a {
       font-size: 20px;
@@ -324,23 +315,28 @@ textarea{
         color: white;
         font-weight: bold;
         text-decoration: none;
-         font-family: abril fatface, sans-serif;
+        font-family: abril fatface, sans-serif;
       }
       
       .navlinks {
-        
-        list-style: none;
-        line-height: 50px;
-        margin: 0;
+        float: left;
+        margin-left: 20px;
         padding: 0;
+        list-style: none;
+        line-height: 60px;
         z-index:1;
       }
       
-      .navlinks li {
-        display: inline-block;
-        margin: 0px 30px;
-      }
       
+     
+      .navlinks li:not(.push-right){
+        display: inline-block;
+        margin: 0px 20px;
+      }
+      .push-right {
+        display: inline-block;
+        margin-left: 1230px;
+      }
       .navlinks li a {
         color: #000;
         text-decoration: none;
